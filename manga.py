@@ -28,8 +28,8 @@ def main():
 
     # 入力画像とスクリーントーン画像を取得
     img = cv2.imread("main.jpg") 
-    screen = cv2.imread("screen.jpg")
-    
+    screen = cv2.imread("screen2.jpg")
+
     # 画像の漫画化
     manga = manga_filter(img, screen, 60, 150)
     
