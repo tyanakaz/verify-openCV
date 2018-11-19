@@ -1,0 +1,14 @@
+version: '3'
+
+services:
+  aws-sam:
+    build: .
+    command: /bin/bash -c 'bash'
+    env_file: .env
+    volumes:
+      - .:/usr/src/app
+    environment:
+      LANG: en_US.UTF-8
+      LANGUAGE: en_US:en
+      LC_ALL: en_US.UTF-8
+      TZ: Asia/Tokyo
